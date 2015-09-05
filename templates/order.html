@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>order</title>	
+
+	<link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+
+	<style type="text/css">    
+  body
+  {
+    background-color:#000;
+  }
+
+  h1
+  {
+    font-size:48px;
+    margin-top:0px;
+    font-family:Arial, sans-serif;
+    text-shadow:2px 0 15px #292929;
+    letter-spacing:2px;
+    text-decoration:none;
+    color:#DDD;
+  }
+
+  #banner
+  {
+    width:1000px;
+    height:500px;
+    text-align:center;
+    background-image:url(http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/Q-Z/west-indian-manatee-group.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    border-radius:5px;
+    margin:90px auto auto;
+    padding:80px 0;
+  }
+
+
+  .order_form 
+  {
+    margin-top:40px;
+    margin: auto;
+    border-radius:3px;
+    font-family:Sintony, sans-serif;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
+    border: solid 1px #a1a1a1;
+    width:500px;
+    height:auto;
+    text-align:left;
+    padding: 10px;
+  }
+
+  .order_form label, .order_form input
+    {
+        margin-bottom: 10px;
+    }
+ 
+ 
+    br
+    {
+       
+        clear: right;
+    }
+
+
+ 
+	</style>
+
+</head>  
+  
+<body>
+
+	<div id="banner">
+		<h1>Order Yours Today! </h1>
+    <div class="order_form">
+      <form action="/thank_you" method="post">
+      
+      <label><strong>Title</strong></label>
+      <select name="Title">
+        <option value="Mr.">Mr.</option>
+        <option value="Mrs.">Mrs.</option>
+        <option value="Miss">Miss</option>
+      </select>
+
+      <label><strong>Name</strong></label>
+      <input type="text" name="name"></input>
+      <div style="line-height:70%;">
+        <br>
+      </div>
+
+      <label><strong>Size:</strong></label>
+      <input type="radio" name="size" value="small">Small Seacow</input>
+      <input type="radio" name="size" value="medium">Medium Seacow</input>
+      <input type="radio" name="size" value="large">Large Seacow</input>
+      <br>
+      <input type="radio" name="size" value="giant">Giant Sea Mammoth</input>
+      <div style="line-height:70%;">
+        <br>
+      </div>
+
+      <label><strong>Desired Gender</strong></label>
+      <select name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="surprise">Surprise!</option>
+      </select>
+      <div style="line-height:70%;">
+        <br>
+      </div>
+
+
+      <label><strong>Additional Features:</strong></label>
+      <br>
+      <input type="checkbox" name="features" value="extra_cuddly">Extra Cuddly</input>
+      <input type="checkbox" name="features" value="majestic">Majestic</input>
+      <input type="checkbox" name="features" value="motherly">Motherly</input>
+      <br>
+      <input type="checkbox" name="features" value="shy">Shy</input>
+      <input type="checkbox" name="features" value="extra_cubby">Exta Chubby</input>
+      <div style="line-height:70%;">
+        <br>
+      </div>
+
+      <label><strong>Delivery instructions:</strong></label>
+      <br>
+      <textarea name="delivery" cols="60" rows="6"></textarea>
+
+      <input type="submit" value="Send my Order">
+
+      </form>   
+    </div>
+	</div>
+
+
+
+
+
+
+
+</body>
+</html>

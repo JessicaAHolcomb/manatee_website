@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{{title}}</title>	
+
+	<link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+
+	<style type="text/css">    
+  body
+  {
+    background-color:#001;
+  }
+
+  h1
+  {
+    font-size:48px;
+    margin-top:100px;
+    font-family:Arial, sans-serif;
+    text-shadow:2px 0 15px #292929;
+    letter-spacing:2px;
+    text-decoration:none;
+    color:#DDD;
+  }
+
+  #banner
+  {
+    width:600px;
+    height:300px;
+    text-align:center;
+    background-image:url(http://s.ngm.com/2013/04/manatees/img/florida-manatee-kings-bay-615.jpg);
+    background-repeat:no-repeat;
+    border-radius:5px;
+    margin:90px auto auto;
+    padding:80px 0;
+  }
+
+  .lead
+  {
+    background-color:rgba(255,255,255,0.6);
+    border-radius:3px;
+    box-shadow:rgba(0,0,0,0.2) 0 1px 3px;
+    font-family:Sintony, sans-serif;
+  }
+
+  .quote 
+  {
+    margin-top:40px;
+    border-radius:3px;
+    font-family:Sintony, sans-serif;
+  }
+
+  .buttons
+  {
+    margin-top:40px;
+    border-radius:3px;
+    font-family:Sintony, sans-serif;
+  }
+
+  #emailform{
+    text-align:center;
+  }
+
+	</style>
+
+</head>  
+  
+<body>
+
+	<div id="banner">
+		<h1>The Manatee </h1>
+		<p class="lead"> A majestic, gentle asset to mankind</p>
+    <p class="quote"> <strong> *Fact: Manatees love Jess </strong> </p>
+	
+
+    <p class=="buttons">
+      <form action="/order" method="post">
+      <input type="submit" name="order" value="order"></input>
+      </form>
+      <br>
+      <form action="/watch" method="post">
+      <input type= "submit" name="watch" value="watch"></input>
+      </form>
+    </p>
+
+  </div>
+
+
+	<div id="emailform">
+    <form action="/signup" method="post">
+    <input type="text" name="email"></input>
+    <input type="submit" value="Signup"></input>
+    </form>		
+  </div>
+
+
+
+</body>
+</html>
